@@ -1,4 +1,5 @@
 import gym
+import pygame
 from gym import Env
 from gym.spaces import Discrete, Box, Dict, Tuple, MultiBinary, MultiDiscrete
 import numpy as np
@@ -20,6 +21,8 @@ episodes = 2
 log_path = os.path.join('Training', 'Logs')
 model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=log_path)
 
+model.learn(total_timesteps=50000)
+
 for episode in range(1, episodes + 1):
     obs = env.reset()
     done = False
@@ -32,5 +35,6 @@ for episode in range(1, episodes + 1):
         score += reward
     print('Episode:{}, score: {}'.format(episode, score))
 
+pygame.quit()
 env.close()
 
