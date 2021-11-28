@@ -63,7 +63,7 @@ level = [
     "WW WW              W",
     "WW WW     WWWWWW   W",
     "WW WWWWW       W   W",
-    "WW WW        WWWW  W",
+    "WWEWW        WWWW  W",
     "WW WW  WWWW        W",
     "WW WW     W W      W",
     "WW WW     W   WWW WW",
@@ -72,7 +72,7 @@ level = [
     "WW WW W   WWWWW W  W",
     "WW WW    WW        W",
     "WW WW WWWW   WWW   W",
-    "WWEWW W       W    W",
+    "WW WW W       W    W",
     "WWWWWWWWWWWWWWWWWWWW",
 ]
 
